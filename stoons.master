@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="stoons.master.cs" Inherits="stoons" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .auto-style4 {
+            width: 184px;
+        }
+    .auto-style5 {
+        margin-bottom: 0px;
+    }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+
+    
+    <table style="width:900px; border-collapse:collapse;" border ="1">
+
+
+        <tr>
+
+            <td style="text-align:center; vertical-align:top;" class="auto-style4">
+                <strong>
+                    <br />
+                <br />
+                <asp:Label ID="Label1" runat="server" Font-Size="Large" Text="웹툰/만화"></asp:Label>
+                <br />
+                <br />
+
+
+                  <asp:ImageButton ID="ibtnAllweek" runat="server" Height="30px" 
+                    ImageUrl="~/Images/btn2_all.png" OnClick="ibtnAllweek_Click"  />
+              
+                  <br />
+                <br />
+                </strong>
+
+
+                  <asp:ImageButton ID="ibtnMonday" runat="server" Height="30px" 
+                    ImageUrl="~/Images/btn2_weekmonday.png" OnClick="ibtnMonday_Click"/>
+              
+                  <br />
+                <br />
+              
+                  <asp:ImageButton ID="ibtnTuesday" runat="server" Height="30px" 
+                    ImageUrl="~/Images/btn2_weektuesday.png" OnClick="ibtnTuesday_Click"/>
+               
+                  <br />
+                <br />
+               
+                  <asp:ImageButton ID="IbtnWednesday" runat="server" Height="30px" 
+                    ImageUrl="~/Images/btn2_wednesday.png" OnClick="IbtnWednesday_Click"  />
+
+                  <br />
+                <br />
+
+                  <asp:ImageButton ID="IbtnThursday" runat="server" Height="30px" 
+                    ImageUrl="~/Images/btn2_thursdayday.png" OnClick="IbtnThursday_Click" />
+
+               
+
+                <br />
+                <br />
+
+                  <asp:ImageButton ID="IbtnFriday" runat="server" Height="30px" 
+                    ImageUrl="~/Images/btn2_firday.png" OnClick="IbtnFriday_Click"  />
+
+               
+
+                <br />
+                <br />
+
+                  <asp:ImageButton ID="IbtnSaturday" runat="server" Height="30px" 
+                    ImageUrl="~/Images/btn2_saturday.png" OnClick="IbtnSaturday_Click"  />
+
+               
+
+                <br />
+                <br />
+
+                  <asp:ImageButton ID="IbtnSunday" runat="server" Height="30px" 
+                    ImageUrl="~/Images/btn2_sunday.png" OnClick="IbtnSunday_Click"/>
+
+               
+
+                <br />
+                <br />
+                <br />
+
+                  <asp:ImageButton ID="btnToonupload" runat="server" Height="46px" 
+                    ImageUrl="~/Images/btn2_webtoonupload.png" 
+                    Width="163px" CssClass="auto-style5" OnClick="btnToonupload_Click" />
+
+               
+
+                <br />
+                <br />
+
+               
+
+                <br />
+
+               
+
+            </td>
+
+            <td style="width:730px; text-align:center;vertical-align:top;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                </asp:ContentPlaceHolder>
+
+            </td>
+
+        </tr>
+
+
+   
+
+    </table>
+
+
+
+
+
+
+</asp:Content>
+
+
+

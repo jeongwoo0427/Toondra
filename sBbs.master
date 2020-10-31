@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="sBbs.master.cs" Inherits="sBbs" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .auto-style4 {
+            width: 184px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+
+    
+    <table style="width:900px; border-collapse:collapse;" border ="1">
+
+
+        <tr>
+
+            <td style="text-align:center; vertical-align:top;" class="auto-style4">
+                <strong>
+                    <br />
+                <br />
+                <asp:Label ID="Label1" runat="server" Font-Size="Medium" Text="게시판"></asp:Label>
+                <br />
+                <br />
+                </strong>
+
+
+                  <asp:ImageButton ID="ibtnFree" runat="server" Height="30px" 
+                    ImageUrl="~/Images/btn3_bbsfree.png" OnClick="ibtnFree_Click"  />
+              
+                  <br />
+                <br />
+              
+                  <asp:ImageButton ID="ibtnQna" runat="server" Height="30px" 
+                    ImageUrl="~/Images/btn_bbsqna.png" OnClick="ibtnQna_Click"  />
+               
+                  <br />
+                <br />
+               
+                  <asp:ImageButton ID="IbtnNotice" runat="server" Height="30px" 
+                    ImageUrl="~/Images/btn_bbsnotice.png" OnClick="IbtnNotice_Click"  />
+
+                  <br />
+                <br />
+
+               
+
+                <br />
+                <br />
+
+               
+
+                <br />
+                <br />
+
+               
+
+                <br />
+                <br />
+
+               
+
+                <br />
+                <br />
+                <br />
+
+               
+
+                <br />
+                <br />
+
+               
+
+                <br />
+
+               
+
+            </td>
+
+            <td style="width:730px; text-align:center;vertical-align:top;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                </asp:ContentPlaceHolder>
+
+            </td>
+
+        </tr>
+
+
+   
+
+    </table>
+
+
+
+
+
+
+</asp:Content>

@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html >
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>김정우의 홈페이지에 오신 걸 환영합니다!</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 726px;
+            height: 19px;
+        }
+        .auto-style2 {
+            width: 200px;
+            height: 19px;
+        }
+        .auto-style3 {
+            height: 19px;
+        }
+        .auto-style4 {
+            width: 3761px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+    <div>
+       
+        <table style="width:900px; border-collapse:collapse; font-family:'Malgun Gothic'; font-size:12px; ">
+
+            <tr >
+
+                <td class="auto-style3" >
+                    <asp:ImageButton ID="ibtnHome" runat="server" Height="75px" 
+                        ImageUrl="~/Images/mainlogo.png" Width="263px" />
+                </td>
+
+                <td class="auto-style4">
+
+
+                    <br />
+                    <asp:DropDownList ID="DropDownList1" runat="server" Width="107px">
+                        <asp:ListItem>작품명</asp:ListItem>
+                        <asp:ListItem>내용</asp:ListItem>
+                        <asp:ListItem>닉네임</asp:ListItem>
+                    </asp:DropDownList>
+
+
+                    <asp:TextBox ID="TextBox1" runat="server" Width="152px"></asp:TextBox>
+                    <asp:Button ID="Button1" runat="server" Text="검색" OnClick="Button1_Click" Width="78px" />
+
+
+                    <br />
+
+
+                </td>
+
+                <td style="text-align:right; vertical-align:middle;" class="auto-style1">
+             
+                    <asp:Label ID="lblLogin" runat="server" Font-Size="Small" Text="Label"></asp:Label>
+&nbsp;
+             
+                    <asp:ImageButton ID="ibtnMyPage" runat="server" Height="30px" 
+                        ImageUrl="~/Images/btn_mypage.png" 
+                        CausesValidation="False" Visible="False" OnClick="ibtnMyPage_Click" />
+                   
+                </td>
+                <td style="text-align:left; vertical-align:middle;" class="auto-style2">
+                   
+                    <asp:ImageButton ID="ibtnToggle" runat="server" Height="30px" 
+                        ImageUrl="~/Images/btn_login.png" 
+                        CausesValidation="False" OnClick="ibtnToggle_Click" />
+                   
+                </td>
+
+
+
+            </tr>
+            <tr >
+            <td style="text-align:center; vertical-align:middle; " colspan="4"  >
+                &nbsp;</td>
+            </tr>
+
+
+             <tr>
+            <td style="text-align:center; vertical-align:middle; border:double; background-color:lightgreen" colspan="4">
+                <asp:ImageButton ID="ibtnProfile" runat="server" Height="30px" 
+                    ImageUrl="~/Images/btn2_webhome.png" 
+                    CausesValidation="False" OnClick="ibtnProfile_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ibtnStudyRoom" runat="server" Height="30px" 
+                    ImageUrl="~/Images/btn2_webtoon.png"
+                    CausesValidation="False" OnClick="ibtnStudyRoom_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ibtnBbs" runat="server" Height="30px" 
+                    ImageUrl="~/Images/btn2_webillust.png" 
+                    CausesValidation="False" OnClick="ibtnBbs_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:ImageButton ID="ibtnDiary" runat="server" Height="30px" 
+                    ImageUrl="~/Images/btn2_webboard.png"
+                    CausesValidation="False" OnClick="ibtnDiary_Click" />
+            </td>
+            </tr>
+
+
+            <tr>
+               
+                    <td style="text-align:center; vertical-align:middle;" colspan="4">
+                            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+    </asp:ContentPlaceHolder>
+            </td>
+            </tr>
+
+
+                <tr>
+            <td style="text-align:center; vertical-align:middle;" colspan="4">
+                Copyright (c) 2020, 두원공대 컴공과 컴공과 <br /> 
+                경기도 파주시 파주읍 주라위길 159, 전화 031-935-7130
+            </td>
+            </tr>
+
+
+
+        </table>
+    </div>
+    </form>
+</body>
+</html>
